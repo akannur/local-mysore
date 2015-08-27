@@ -1,0 +1,1092 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Local Mysore</title>
+		<meta name="description" content="Thumbnail Pile Effect with Automatic Grouping" />
+		<meta name="keywords" content="jquery, pile, effect, images, grid, thumbnails, css3, grouping, albums" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico"> 
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/stapel.css" />
+		<link rel="stylesheet" type="text/css" href="css/custom.css" />	
+		<link rel="stylesheet" type="text/css" href="css/csshake.css">
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+		<script src="js/modernizr.custom.63321.js"></script>
+        
+        <!-- Google Anaytics -->
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		  ga('create', 'UA-65669242-1', 'auto');
+		  ga('send', 'pageview');
+		</script>
+
+		<link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="images/favicon/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+		<link rel="manifest" href="/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+	</head>
+	<body>
+		<div class="fb-like" data-href="https://www.facebook.com/local2mysore" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+		<div class="container">	
+			<header class="clearfix">
+		<img src="images/local-mysore-small.png" alt="Logo">
+				<nav class="codrops-demos">
+					<a class="current-demo" href="index.html">Home</a>
+					<a href="about.html">About</a>
+					<a href="contact.html">Contact</a>
+				</nav>
+				<div class="support-note">
+					<span class="note-ie">Sorry, only modern browsers.</span>
+				</div>
+			</header>
+			<section class="main">
+				<div class="wrapper">
+				                    <marquee>LocalMysore helps you with paying or booking things online.</marquee> 
+
+					<div class="topbar">
+
+						<span id="close" class="back">&larr;</span>
+					<div id="custom-search-input">
+
+                            <div class="input-group col-md-12">
+                                <input type="text" class="  search-query form-control" name="keyword" id="keyword" placeholder="Search" />
+                                <span class="input-group-btn">
+                                    <button class="btn btn-danger" type="button">
+                                        <span class=" glyphicon glyphicon-search"></span>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+						<!-- <marquee>Pay Bills, Restaurants, Music Concerts, Yoga Centers, Housing, Plots . . .</marquee> -->
+						<div id="fb-root"></div>
+						<script>
+							(function(d, s, id) {
+							  var js, fjs = d.getElementsByTagName(s)[0];
+							  if (d.getElementById(id)) return;
+							  js = d.createElement(s); js.id = id;
+							  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";
+							  fjs.parentNode.insertBefore(js, fjs);
+							}(document, 'script', 'facebook-jssdk'));
+						</script>
+						
+					</div>
+					
+					<ul id="tp-grid" class="tp-grid">
+
+						<!-- Cakes & Pastry -->
+												
+						<li data-pile="Cakes & Pastry">
+							<a href="http://goo.gl/HMEgmq" target="_blank" title="aroma | bakery">
+								<span class="tp-info"><span>Aroma Bakery</span></span>
+								<img src="images/1/1.jpg" />
+							</a>
+						</li>
+						<li data-pile="Cakes & Pastry">
+							<a href="http://goo.gl/H5tbDG" target="_blank" title="cubs | bakery">
+								<span class="tp-info"><span>Cubs</span></span>
+								<img src="images/1/2.jpg" />
+							</a>
+						</li>	
+						<li data-pile="Cakes & Pastry">
+							<a href="http://goo.gl/8l93BY" target="_blank" title="dolphins | bakery">
+								<span class="tp-info"><span>Dolphins</span></span>
+								<img src="images/1/3.jpg" />
+							</a>
+						</li>
+						<li data-pile="Cakes & Pastry">
+							<a href="http://www.indiacakes.com/" target="_blank" title="india cakes | bakery">
+								<span class="tp-info"><span>India Cakes</span></span>
+								<img src="images/1/4.jpg" />
+							</a>
+						</li>
+
+						<li data-pile="Cakes & Pastry" class="shake shake-slow">
+							<a href="#" class="displayImage">
+								<span class="tp-info"><span>Display Image</span></span>
+								<img src="images/1/5.jpg" />
+							</a>
+						</li>
+
+
+						<!-- Events -->
+						<li data-pile="Events">
+							<a href="http://in.bookmyshow.com/mysore/events" target="_blank" title="bookmyshow | events">
+								<span class="tp-info"><span>Book My Show</span></span>
+								<img src="images/3/1.jpg" />
+							</a>
+						</li>
+						<li data-pile="Events">
+							<a href="https://in.explara.com/mysuru" target="_blank" title="explara | events">
+								<span class="tp-info"><span>Explara</span></span>
+								<img src="images/3/2.jpg" />
+							</a>
+						</li>
+						<li data-pile="Events">
+							<a href="http://www.masthmysore.com/" target="_blank" title="masthmysore | events">
+								<span class="tp-info"><span>Masth Mysore</span></span>
+								<img src="images/3/3.jpg" />
+							</a>
+						</li>
+						<li data-pile="Events">
+							<a href="http://events.mysoreonline.in/index.html" target="_blank" title="mysore online | events">
+								<span class="tp-info"><span>Mysore Online</span></span>
+								<img src="images/3/4.jpg" />
+							</a>
+						</li>
+						<li data-pile="Events">
+							<a href="#" class="displayImage">
+								<span class="tp-info"><span>Display Image</span></span>
+								<img src="images/3/5.jpg" />
+							</a>
+						</li>
+
+						<!-- DTH Payment -->
+						<li data-pile="DTH Payment">
+							<a href="http://goo.gl/SEpKji" target="_blank" title="airtel digital tv | dth">
+								<span class="tp-info"><span>Airtel Digital TV</span></span>
+								<img src="images/4/1.jpg" />
+							</a>
+						</li>
+						<li data-pile="DTH Payment">
+							<a href="http://myservices.relianceada.com/captureDTHInstantPayment.do" target="_blank" title="big tv | dth">
+								<span class="tp-info"><span>Big TV</span></span>
+								<img src="images/4/2.jpg" />
+							</a>
+						</li>
+						<li data-pile="DTH Payment">
+							<a href="http://www.dishtv.in/Pages/Instant-Recharge.aspx" target="_blank" title="dish tv | dth">
+								<span class="tp-info"><span>Dish TV</span></span>
+								<img src="images/4/3.jpg" />
+							</a>
+						</li>
+							<li data-pile="DTH Payment">
+							<a href="http://www.sundirect.in/recharge.aspx" target="_blank" title="sun direct | dth">
+								<span class="tp-info"><span>Sun Direct</span></span>
+								<img src="images/4/4.jpg" />
+							</a>
+						</li>
+						<li data-pile="DTH Payment">
+							<a href="https://paytm.com/online-prepaid-tata-sky-dth-recharge.htm" target="_blank" title="tata sky | dth">
+								<span class="tp-info"><span>TATA Sky</span></span>
+								<img src="images/4/5.jpg" />
+							</a>
+						</li>
+						<li data-pile="DTH Payment">
+							<a href="http://www.videocond2h.com/wsc/recharge.aspx" target="_blank" title="videocon d2h | dth">
+								<span class="tp-info"><span>Videocon D2H</span></span>
+								<img src="images/4/6.jpg" />
+							</a>
+						</li>
+						<li data-pile="DTH Payment">
+							<a href="#" class="displayImage">
+								<span class="tp-info"><span>Display Image</span></span>
+								<img src="images/4/7.jpg" />
+							</a>
+						</li>
+						<!-- Home Delivery -->
+						<li data-pile="Home Delivery">
+							<a href="https://www.zomato.com/mysore/big-chicken-jayalakhsmipuram" target="_blank" title="big chicken | home delivery">
+								<span class="tp-info"><span>Big Chicken</span></span>
+								<img src="images/5/1.jpg" />
+							</a>
+						</li>
+						<li data-pile="Home Delivery">
+							<a href="http://www.dominos.co.in/store-location/mysore" target="_blank" title="dominos | home delivery">
+								<span class="tp-info"><span>Dominos</span></span>
+								<img src="images/5/2.jpg" />
+							</a>
+						</li>
+						<li data-pile="Home Delivery">
+							<a href="http://hotelempire.in/empire-mysore/empire-restaurant-mysore" target="_blank" title="empire | home delivery">
+								<span class="tp-info"><span>Empire</span></span>
+								<img src="images/5/3.jpg" />
+							</a>
+						</li>
+							<li data-pile="Home Delivery">
+							<a href="http://goo.gl/Xp6INh" target="_blank" title="jalpaan | home delivery">
+								<span class="tp-info"><span>Jalpaan</span></span>
+								<img src="images/5/4.jpg" />
+							</a>
+						</li>
+						<li data-pile="Home Delivery">
+							<a href="https://delivery.kfc.co.in/kfcindia/web" target="_blank" title="kfc | home delivery">
+								<span class="tp-info"><span>KFC</span></span>
+								<img src="images/5/5.jpg" />
+							</a>
+						</li>
+						<li data-pile="Home Delivery">
+							<a href="http://tinyurl.com/nask5yq" target="_blank" title="mcdonalds | home delivery">
+								<span class="tp-info"><span>McDonalds</span></span>
+								<img src="images/5/6.jpg" />
+							</a>
+						</li>
+						<li data-pile="Home Delivery">
+							<a href="http://goo.gl/i0WDHg" target="_blank" title="nanking | home delivery">
+								<span class="tp-info"><span>Nanking</span></span>
+								<img src="images/5/7.jpg" />
+							</a>
+						</li>
+						<li data-pile="Home Delivery">
+							<a href="http://goo.gl/caMrdJ" target="_blank" title="pakva | home delivery">
+								<span class="tp-info"><span>Pakva</span></span>
+								<img src="images/5/8.jpg" />
+							</a>
+						</li>
+						<li data-pile="Home Delivery">
+						    <a href="http://tinyurl.com/pl7e9s9" target="_blank" title="parklane | home delivery">
+								<span class="tp-info"><span>Parklane</span></span>
+								<img src="images/5/9.jpg" />
+							</a>
+						</li>
+							<li data-pile="Home Delivery">
+							<a href="https://orders.pizzahut.co.in/phindia/web" target="_blank" title="pizza hut | home delivery">
+								<span class="tp-info"><span>Pizza Hut</span></span>
+								<img src="images/5/10.jpg" />
+							</a>
+						</li>
+						<li data-pile="Home Delivery">
+							<a href="http://goo.gl/FLvEPD" target="_blank" title="rrr | home delivery">
+								<span class="tp-info"><span>RRR</span></span>
+								<img src="images/5/11.jpg" />
+							</a>
+						</li>
+						<li data-pile="Home Delivery">
+							<a href="http://www.tandooriwala.com/#section-6" target="_blank" title="tandooriwala | home delivery">
+								<span class="tp-info"><span>Tandooriwala</span></span>
+								<img src="images/5/12.jpg" />
+							</a>
+						</li>
+						<li data-pile="Home Delivery">
+							<a href="#" class="displayImage">
+								<span class="tp-info"><span>Display Image</span></span>
+								<img src="images/5/13.jpg" />
+							</a>
+						</li>
+
+						<!-- Cab Booking -->
+						<li data-pile="Cab Booking">
+							<a href="http://www.blablacar.in/search-ride-sharing" target="_blank" title="bla bla car | cab booking">
+								<span class="tp-info"><span>Bla Bla Car</span></span>
+								<img src="images/6/1.jpg" />
+							</a>
+						</li>
+						<li data-pile="Cab Booking">
+							<a href="http://www.bookcab.in/mysore" target="_blank" title="book cab | cab booking">
+								<span class="tp-info"><span>Book Cab</span></span>
+								<img src="images/6/2.jpg" />
+							</a>
+						</li>
+						<li data-pile="Cab Booking">
+							<a href="http://www.olacabs.com/car-rentals/mysore" target="_blank" title="ola cab| cab booking">
+								<span class="tp-info"><span>Ola Cab</span></span>
+								<img src="images/6/3.jpg" />
+							</a>
+						</li>
+						<li data-pile="Cab Booking">
+							<a href="http://www.taxiforsure.com/mysore-cabs/" target="_blank" title="taxi for sure | cab booking">
+								<span class="tp-info"><span>Taxi For Sure</span></span>
+								<img src="images/6/4.jpg" />
+							</a>
+						</li>
+						<li data-pile="Cab Booking">
+							<a href="https://www.uber.com/cities/mysore" target="_blank" title="uber | cab booking">
+								<span class="tp-info"><span>UBER</span></span>
+								<img src="images/6/5.jpg" />
+							</a>
+						</li>
+						<li data-pile="Cab Booking">
+							<a href="#" class="displayImage">
+								<span class="tp-info"><span>Display Image</span></span>
+								<img src="images/6/6.jpg" />
+							</a>
+						</li>
+
+						<!-- Broadband Payment -->
+						<li data-pile="Broadband Payment">
+							<a href="http://goo.gl/aa6qKc" target="_blank" title="airtel | broadband">
+								<span class="tp-info"><span>Airtel</span></span>
+								<img src="images/7/1.jpg" />
+							</a>
+						</li>
+						<li data-pile="Broadband Payment">
+							<a href="http://portal1.bsnl.in/aspxfiles/instapay.aspx" target="_blank" title="bsnl | broadband" >
+								<span class="tp-info"><span>BSNL</span></span>
+								<img src="images/7/2.jpg" />
+							</a>
+						</li>
+						<li data-pile="Broadband Payment">
+							<a href="http://myservices.relianceada.com/captureInstantPayment.do" target="_blank" title="reliance | broadband">
+								<span class="tp-info"><span>Reliance</span></span>
+								<img src="images/7/3.jpg" />
+							</a>
+						</li>
+						<li data-pile="Broadband Payment">
+							<a href="https://pgi.billdesk.com/pgmerc/tatadocomo/DOCOMODetails.htm" target="_blank" title="tata photon | broadband">
+								<span class="tp-info"><span>TATA Photon</span></span>
+								<img src="images/7/4.jpg" />
+							</a>
+						</li>
+						<li data-pile="Broadband Payment">
+							<a href="http://myaccount.yashtel.in/loginpage.aspx" target="_blank" title="yashtel | broadband">
+								<span class="tp-info"><span>Yashtel</span></span>
+								<img src="images/7/5.jpg" />
+							</a>
+						</li>
+						<li data-pile="Broadband Payment">
+							<a href="#" class="displayImage">
+								<span class="tp-info"><span>Display Image</span></span>
+								<img src="images/7/6.jpg" />
+							</a>
+						</li>
+
+						<!-- Bus Booking -->
+						<li data-pile="Bus Booking">
+							<a href="http://www.busindia.com/" target="_blank" title="bus india | broadband">
+								<span class="tp-info"><span>Bus India</span></span>
+								<img src="images/8/1.jpg" />
+							</a>
+						</li>
+						<li data-pile="Bus Booking">
+							<a href="http://www.cleartrip.com/tourism/bus/" target="_blank" title="cleartrip | bus">
+								<span class="tp-info"><span>Cleartip</span></span>
+								<img src="images/8/2.jpg" />
+							</a>
+						</li>
+						<li data-pile="Bus Booking">
+							<a href="http://www.durgamba.com/" target="_blank" title="durgamba | bus">
+								<span class="tp-info"><span>Durgamba</span></span>
+								<img src="images/8/3.jpg" />
+							</a>
+						</li>
+						<li data-pile="Bus Booking">
+							<a href="http://www.goibibo.com/bus/#home" target="_blank" title="goibibo | bus">
+								<span class="tp-info"><span>Goibibo</span></span>
+								<img src="images/8/4.jpg" />
+							</a>
+						</li>
+						<li data-pile="Bus Booking">
+							<a href="http://m.ksrtc.in/mobile/search.do" target="_blank" title="ksrtc | bus">
+								<span class="tp-info"><span>KSRTC</span></span>
+								<img src="images/8/5.jpg" />
+							</a>
+						</li>
+						<li data-pile="Bus Booking">
+							<a href="http://www.makemytrip.com/bus-tickets/" target="_blank" title="make my trip | bus">
+								<span class="tp-info"><span>Make My Trip</span></span>
+								<img src="images/8/6.jpg" />
+							</a>
+						</li>
+						<li data-pile="Bus Booking">
+							<a href="http://www.redbus.in/" target="_blank" title="red bus | bus">
+								<span class="tp-info"><span>Red Bus</span></span>
+								<img src="images/8/7.jpg" />
+							</a>
+						</li>
+						<li data-pile="Bus Booking">
+							<a href="http://www.srsbooking.com/" target="_blank" title="srs | bus">
+								<span class="tp-info"><span>SRS</span></span>
+								<img src="images/8/8.jpg" />
+							</a>
+						</li>
+						<li data-pile="Bus Booking">
+							<a href="#" class="displayImage">
+								<span class="tp-info"><span>Display Image</span></span>
+								<img src="images/8/9.jpg" />
+							</a>
+						</li>
+
+						<!-- Insurance Payment-->
+						<li data-pile="Insurance Payment">
+							<a href="https://bajajallianzlifeonline.co.in/online/portal/logon/logon.jsp" target="_blank" title="bajaj alliance | insurance | lic">
+								<span class="tp-info"><span>Bajaj Alliance</span></span>
+								<img src="images/9/1.jpg" />
+							</a>
+						</li>
+						<li data-pile="Insurance Payment">
+							<a href="http://goo.gl/ZbOVSf" target="_blank" title="lic | insurance | lic">
+								<span class="tp-info"><span>LIC</span></span>
+								<img src="images/9/2.jpg" />
+							</a>
+						</li>
+						<li data-pile="Insurance Payment">
+							<a href="https://login.newindia.co.in/online/loginOnline.html" target="_blank" title="new india | insurance | lic">
+								<span class="tp-info"><span>New India</span></span>
+								<img src="images/9/3.jpg" />
+							</a>
+						</li>
+						<li data-pile="Insurance Payment">
+							<a href="https://mypolicy.sbilife.co.in/OnlinePayment/BulletPayment.aspx" target="_blank" title="sbi life | insurance | lic">
+								<span class="tp-info"><span>SBI Life</span></span>
+								<img src="images/9/4.jpg" />
+							</a>
+						</li>
+						<li data-pile="Insurance Payment">
+							<a href="#" class="displayImage">
+								<span class="tp-info"><span>Display Image</span></span>
+								<img src="images/9/5.jpg" />
+							</a>
+						</li>
+
+
+						<!-- Movie Booking-->
+						<li data-pile="Movie Booking">
+							<a href="http://in.bookmyshow.com/mysore" target="_blank" title="book my show | movie">
+								<span class="tp-info"><span>Book My Show</span></span>
+								<img src="images/10/1.jpg" />
+							</a>
+						</li>
+						<li data-pile="Movie Booking">
+							<a href="http://www.masthmysore.com/movies-in-mysore" target="_blank" title="masth mysore | movie">
+								<span class="tp-info"><span>Masth Mysore</span></span>
+								<img src="images/10/2.jpg" />
+							</a>
+						</li>
+						<li data-pile="Movie Booking">
+							<a href="http://www.filmibeat.com/" target="_blank" title="filmi beat | movie">
+								<span class="tp-info"><span>Filmi Beat</span></span>
+								<img src="images/10/3.jpg" />
+							</a>
+						</li>
+						<li data-pile="Movie Booking">
+							<a href="http://cinematrendz.com/theatres.aspx?location=Mysore" target="_blank" title="cinema trendz | movie">
+								<span class="tp-info"><span>Cinema Trendz</span></span>
+								<img src="images/10/4.jpg" />
+							</a>
+						</li>
+						<li data-pile="Movie Booking">
+							<a href="#" class="displayImage">
+								<span class="tp-info"><span>Display Image</span></span>
+								<img src="images/10/5.jpg" />
+							</a>
+						</li>
+
+						<!-- Mobile Recharge-->
+						<li data-pile="Mobile Recharge">
+							<a href="https://epayment.aircel.com/online-recharge/" target="_blank" title="aircel | mobile">
+								<span class="tp-info"><span>Aircel</span></span>
+								<img src="images/11/1.jpg" />
+							</a>
+						</li>
+						<li data-pile="Mobile Recharge">
+							<a href="https://pay.airtel.com/online-payments/prepaidResponse.do" target="_blank" title="airtel | mobile">
+								<span class="tp-info"><span>Airtel</span></span>
+								<img src="images/11/2.jpg" />
+							</a>
+						</li>
+						<li data-pile="Mobile Recharge">
+							<a href="https://portal.bsnl.in/rc/aspxfiles/instaRecharge.aspx" target="_blank" title="bsnl | mobile">
+								<span class="tp-info"><span>BSNL</span></span>
+								<img src="images/11/3.jpg" />
+							</a>
+						</li>
+						<li data-pile="Mobile Recharge">
+							<a href="http://www.tatadocomo.com/online-recharge.aspx" target="_blank" title="docomo | mobile">
+								<span class="tp-info"><span>Docomo</span></span>
+								<img src="images/11/4.jpg" />
+							</a>
+						</li>
+						<li data-pile="Mobile Recharge">
+							<a href="https://care.ideacellular.com/wps/portal/account/online-recharge" target="_blank" title="idea | mobile">
+								<span class="tp-info"><span>Idea</span></span>
+								<img src="images/11/5.jpg" />
+							</a>
+						</li>
+						<li data-pile="Mobile Recharge">
+							<a href="https://wwwa.rechargeitnow.com/mtsmobile/mtsmobile.jsp" target="_blank" title="mts | mobile">
+								<span class="tp-info"><span>MTS</span></span>
+								<img src="images/11/6.jpg" />
+							</a>
+						</li>
+						<li data-pile="Mobile Recharge">
+							<a href="http://myservices.relianceada.com/captureInstantRecharge.do" target="_blank" title="reliance | mobile">
+								<span class="tp-info"><span>Reliance</span></span>
+								<img src="images/11/7.jpg" />
+							</a>
+						</li>
+						<li data-pile="Mobile Recharge">
+							<a href="http://www.virginmobile.in/online-recharge.aspx" target="_blank" title="virgin | mobile">
+								<span class="tp-info"><span>Virgin</span></span>
+								<img src="images/11/8.jpg" />
+							</a>
+						</li><li data-pile="Mobile Recharge">
+							<a href="https://shop.vodafone.in/shop/prepaid/recharge-online.jsp?cid=kar" target="_blank" title="vodafone | mobile">
+								<span class="tp-info"><span>Vodafone</span></span>
+								<img src="images/11/9.jpg" />
+							</a>
+						</li>
+						<li data-pile="Mobile Recharge">
+							<a href="https://www.freecharge.in/#" target="_blank" title="freecharge | mobile">
+								<span class="tp-info"><span>Freecharge</span></span>
+								<img src="images/11/10.jpg" />
+							</a>
+						</li>
+						<li data-pile="Mobile Recharge">
+							<a href="https://www.mobikwik.com/" target="_blank" title="mobikwik | mobile">
+								<span class="tp-info"><span>MobiKwik</span></span>
+								<img src="images/11/11.jpg" />
+							</a>
+						</li>
+						<li data-pile="Mobile Recharge">
+							<a href="http://www.rechargeitnow.com/" target="_blank" title="rechargeitnow | mobile">
+								<span class="tp-info"><span>RechargeItNow</span></span>
+								<img src="images/11/12.jpg" />
+							</a>
+						</li><li data-pile="Mobile Recharge">
+							<a href="https://paytm.com/airtel-postpaid-mobile-online-bill-payment.htm" target="_blank" title="airtel postpaid | mobile">
+								<span class="tp-info"><span>Airtel Postpaid</span></span>
+								<img src="images/11/13.jpg" />
+							</a>
+						</li>
+						<li data-pile="Mobile Recharge">
+							<a href="https://epayment.aircel.com/aircel-billpay/pmt_face.jsp" target="_blank" title="aircel postpaid | mobile">
+								<span class="tp-info"><span>Aircel Postpaid</span></span>
+								<img src="images/11/14.jpg" />
+							</a>
+						</li>
+						<li data-pile="Mobile Recharge">
+							<a href="https://paytm.com/tata-docomo-gsm-postpaid-mobile-online-bill-payment.htm" target="_blank" title="docomo postpaid | mobile">
+								<span class="tp-info"><span>Docomo Postpaid</span></span>
+								<img src="images/11/15.jpg" />
+							</a>
+						</li>
+						<li data-pile="Mobile Recharge">
+							<a href="https://www.billdesk.com/pgidsk/pgmerc/vodafone/VODAFONE_details.jsp" target="_blank" title="vodafone postpaid | mobile">
+								<span class="tp-info"><span>Vodafone Postpaid</span></span>
+								<img src="images/11/16.jpg" />
+							</a>
+						</li>
+						<li data-pile="Mobile Recharge">
+							<a href="#" class="displayImage">
+								<span class="tp-info"><span>Display Image</span></span>
+								<img src="images/11/17.jpg" />
+							</a>
+						</li>
+
+						<!-- Train Booking -->
+						<li data-pile="Train Booking">
+							<a href="http://www.cleartrip.com/trains" target="_blank" title="cleartrip | train">
+								<span class="tp-info"><span>ClearTrip</span></span>
+								<img src="images/12/1.jpg" />
+							</a>
+						</li>
+						<li data-pile="Train Booking">
+							<a href="http://www.makemytrip.com/railways/" target="_blank" title="make my trip | train">
+								<span class="tp-info"><span>Make My Trip</span></span>
+								<img src="images/12/2.jpg" />
+							</a>
+						</li>
+						<li data-pile="Train Booking">
+							<a href="http://www.yatra.com/" target="_blank" title="yatra | train">
+								<span class="tp-info"><span>Yatra</span></span>
+								<img src="images/12/4.jpg" />
+							</a>
+						</li>
+						<li data-pile="Train Booking">
+							<a href="https://www.irctc.co.in/eticketing/loginHome.jsf" target="_blank" title="indian railways | train">
+								<span class="tp-info"><span>Indian Railways</span></span>
+								<img src="images/12/5.jpg" />
+							</a>
+						</li>
+						<li data-pile="Train Booking">
+							<a href="http://www.indianrail.gov.in/pnr_Enq.html" target="_blank" title="pnr status | train">
+								<span class="tp-info"><span>PNR Status</span></span>
+								<img src="images/12/6.jpg" />
+							</a>
+						</li>
+						<li data-pile="Train Booking">
+							<a href="http://irfca.org/apps/station_codes" target="_blank" title="station codes | train">
+								<span class="tp-info"><span>Station Codes</span></span>
+								<img src="images/12/7.jpg" />
+							</a>
+						</li>
+						<li data-pile="Train Booking">
+							<a href="#" class="displayImage">
+								<span class="tp-info"><span>Display Image</span></span>
+								<img src="images/12/8.jpg" />
+							</a>
+						</li>
+
+
+						<!-- Mysore Special -->
+						<li data-pile="Mysore Special">
+							<a href="http://goo.gl/V68U61" target="_blank" title="hanumanthu | mysore special">
+								<span class="tp-info"><span>Hanumanthu</span></span>
+								<img src="images/13/1.jpg" />
+							</a>
+						</li>
+						<li data-pile="Mysore Special">
+							<a href="http://goo.gl/suS90K" target="_blank" title="mylari | mysore special">
+								<span class="tp-info"><span>Mylari</span></span>
+								<img src="images/13/2.jpg" />
+							</a>
+						</li>
+						<li data-pile="Mysore Special">
+							<a href="http://www.royalmysorewalks.com/booking" target="_blank" title="royalwalks | mysore special">
+								<span class="tp-info"><span>RoyalWalks</span></span>
+								<img src="images/13/3.jpg" />
+							</a>
+						</li>
+						<li data-pile="Mysore Special">
+							<a href="http://kpjayi.org/" target="_blank" title="yoga | mysore special">
+								<span class="tp-info"><span>Yoga</span></span>
+								<img src="images/13/4.jpg" />
+							</a>
+						</li>
+						<li data-pile="Mysore Special">
+							<a href="http://www.cauveryhandicrafts.net/" target="_blank" title="cauvery handicrafts | mysore special">
+								<span class="tp-info"><span>Cauvery Handicrafts</span></span>
+								<img src="images/13/5.jpg" />
+							</a>
+						</li>
+						<li data-pile="Mysore Special">
+							<a href="http://www.ksicsilk.com/Carta/getDps" target="_blank" title="mysore silks | mysore special">
+								<span class="tp-info"><span>Mysore Silk</span></span>
+								<img src="images/13/6.jpg" />
+							</a>
+						</li>
+						<li data-pile="Mysore Special">
+							<a href="http://shreemahalakshmisweets.com/" target="_blank" title=" | mysore special">
+								<span class="tp-info"><span>Mahalaxmi Sweets</span></span>
+								<img src="images/13/7.jpg" />
+							</a>
+						</li>
+						<li data-pile="Mysore Special">
+							<a href="https://www.zomato.com/mysore" target="_blank" title="zomato | mysore special">
+								<span class="tp-info"><span>Zomato Mysore</span></span>
+								<img src="images/13/8.jpg" />
+							</a>
+						</li>
+						<li data-pile="Mysore Special">
+							<a href="#" class="displayImage">
+								<span class="tp-info"><span>Display Image</span></span>
+								<img src="images/13/4.jpg" />
+							</a>
+						</li>
+
+						<!-- Hotel Booking -->
+						<li data-pile="Hotel Booking">
+							<a href="http://goo.gl/SjcFIq" target="_blank" title="country inn | hotel booking | lodge">
+								<span class="tp-info"><span>Country Inn</span></span>
+								<img src="images/14/1.jpg" />
+							</a>
+						</li>
+						<li data-pile="Hotel Booking">
+							<a href="http://goldenlandmark.in/reservations.php" target="_blank" title="golden landmark | hotel booking | lodge">
+								<span class="tp-info"><span>Golden Landmark</span></span>
+								<img src="images/14/2.jpg" />
+							</a>
+						</li>
+						<li data-pile="Hotel Booking">
+							<a href="http://goo.gl/nHdfkE" target="_blank" title="lalith mahal | hotel booking | lodge">
+								<span class="tp-info"><span>Lalith Mahal</span></span>
+								<img src="images/14/3.jpg" />
+							</a>
+						</li>
+						<li data-pile="Hotel Booking">
+							<a href="http://goo.gl/bzUqRi" target="_blank" title="parklane | hotel booking | lodge">
+								<span class="tp-info"><span>Parklane</span></span>
+								<img src="images/14/4.jpg" />
+							</a>
+						</li>
+						<li data-pile="Hotel Booking">
+							<a href="http://goo.gl/2oSOKs" target="_blank" title="pai vista | hotel booking | lodge">
+								<span class="tp-info"><span>Pai Vista</span></span>
+								<img src="images/14/5.jpg" />
+							</a>
+						</li>
+						<li data-pile="Hotel Booking">
+							<a href="http://goo.gl/TKFBF6" target="_blank" title="the quorum | hotel booking | lodge">
+								<span class="tp-info"><span>The Quorum</span></span>
+								<img src="images/14/6.jpg" />
+							</a>
+						</li>
+						<li data-pile="Hotel Booking">
+							<a href="http://goo.gl/ZBjjB2" target="_blank" title="regaalis | hotel booking | lodge">
+								<span class="tp-info"><span>Regaalis</span></span>
+								<img src="images/14/7.jpg" />
+							</a>
+						</li>
+						<li data-pile="Hotel Booking">
+							<a href="http://goo.gl/xaJO0P" target="_blank" title="royal orchid | hotel booking | lodge">
+								<span class="tp-info"><span>Royal Orchid</span></span>
+								<img src="images/14/8.jpg" />
+							</a>
+						</li>
+						<li data-pile="Hotel Booking">
+							<a href="http://goo.gl/K1fCvq" target="_blank" title="silent shores | hotel booking | lodge">
+								<span class="tp-info"><span>Silent Shores</span></span>
+								<img src="images/14/9.jpg" />
+							</a>
+						</li>
+						<li data-pile="Hotel Booking">
+							<a href="http://goo.gl/K1fCvq" target="_blank" title="sandesh the prince | hotel booking | lodge">
+								<span class="tp-info"><span>Sandesh The Prince</span></span>
+								<img src="images/14/10.jpg" />
+							</a>
+						</li>
+						<li data-pile="Hotel Booking">
+							<a href="#" class="displayImage">
+								<span class="tp-info"><span>Display Image</span></span>
+								<img src="images/14/11.jpg" />
+							</a>
+						</li>
+
+						<!-- Online Banking -->
+						<li data-pile="Online Banking">
+							<a href="https://www.onlineandhrabank.net.in/" target="_blank" title="andhra | andra | online banking">
+								<span class="tp-info"><span>Andhra Bank</span></span>
+								<img src="images/15/1.jpg" />
+							</a>
+						</li>
+						<li data-pile="Online Banking">
+							<a href="http://goo.gl/sf5kkn" target="_blank" title="axis | online banking">
+								<span class="tp-info"><span>Axis Bank</span></span>
+								<img src="images/15/2.jpg" />
+							</a>
+						</li>
+						<li data-pile="Online Banking">
+							<a href="https://www.bobibanking.com/" target="_blank" title="bank of baroda | online banking">
+								<span class="tp-info"><span>Bank Of Baroda</span></span>
+								<img src="images/15/3.jpg" />
+							</a>
+						</li>
+						<li data-pile="Online Banking">
+							<a href="http://goo.gl/zXg3UE" target="_blank" title="canara | online banking">
+								<span class="tp-info"><span>Canara Bank</span></span>
+								<img src="images/15/4.jpg" />
+							</a>
+						</li>
+						<li data-pile="Online Banking">
+							<a href="https://www.corpretail.com/RetailBank/" target="_blank" title="corporation | online banking">
+								<span class="tp-info"><span>Corporation Bank</span></span>
+								<img src="images/15/5.jpg" />
+							</a>
+						</li>
+						<li data-pile="Online Banking">
+							<a href="http://goo.gl/QlfDCY" target="_blank" title="hdfc | online banking">
+								<span class="tp-info"><span>HDFC Bank</span></span>
+								<img src="images/15/6.jpg" />
+							</a>
+						</li>
+						<li data-pile="Online Banking">
+							<a href="http://goo.gl/oexR6x" target="_blank" title="icici | online banking">
+								<span class="tp-info"><span>ICICI Bank</span></span>
+								<img src="images/15/7.jpg" />
+							</a>
+						</li>
+						<li data-pile="Online Banking">
+							<a href="https://www.iobnet.co.in/ibanking/login.do" target="_blank" title="indian overseas bank | iob | online banking">
+								<span class="tp-info"><span>Indian Overseas Bank</span></span>
+								<img src="images/15/8.jpg" />
+							</a>
+						</li>
+						<li data-pile="Online Banking">
+							<a href="http://www.karnatakabank.com/ktk/Index.jsp" target="_blank" title="karnataka | online banking">
+								<span class="tp-info"><span>Karnataka Bank</span></span>
+								<img src="images/15/9.jpg" />
+							</a>
+						</li>
+						<li data-pile="Online Banking">
+							<a href="http://goo.gl/xTLfFU" target="_blank" title="pnb | punjab national bank | online banking">
+								<span class="tp-info"><span>Punjab National Bank</span></span>
+								<img src="images/15/10.jpg" />
+							</a>
+						</li>
+						<li data-pile="Online Banking">
+							<a href="https://retail.onlinesbi.com/retail/login.htm#" target="_blank" title="sbi | state bank | online banking">
+								<span class="tp-info"><span>State Bank Of India</span></span>
+								<img src="images/15/15.jpg" />
+							</a>
+						</li>
+						<li data-pile="Online Banking">
+							<a href="https://retail.onlinesbm.com/retail/sbmlogin.htm" target="_blank" title="sbm | state bank | online banking">
+								<span class="tp-info"><span>State Bank Of Mysore</span></span>
+								<img src="images/15/11.jpg" />
+							</a>
+						</li>
+						<li data-pile="Online Banking">
+							<a href="https://www.syndonline.in/B001/ENULogin.jsp" target="_blank" title="syndicate bank | online banking">
+								<span class="tp-info"><span>Syndicate Bank</span></span>
+								<img src="images/15/12.jpg" />
+							</a>
+						</li>
+						<li data-pile="Online Banking">
+							<a href="http://goo.gl/McMu59" target="_blank" title="ubi | union ban of india | online banking">
+								<span class="tp-info"><span>Union Bank Of India</span></span>
+								<img src="images/15/13.jpg" />
+							</a>
+						</li>
+						<li data-pile="Online Banking">
+							<a href="http://goo.gl/2YxgqX" target="_blank" title="vijaya bank | online banking">
+								<span class="tp-info"><span>Vijaya Bank</span></span>
+								<img src="images/15/14.jpg" />
+							</a>
+						</li>
+						<li data-pile="Online Banking">
+							<a href="#" class="displayImage">
+								<span class="tp-info"><span>Display Image</span></span>
+								<img src="images/15/16.jpg" />
+							</a>
+						</li>
+
+						<!-- Ecommerce Websites -->
+						<li data-pile="Ecommerce Websites">
+							<a href="http://www.amazon.in/" target="_blank" title="amazon | ecommerce">
+								<span class="tp-info"><span>Amazon</span></span>
+								<img src="images/16/1.jpg" />
+							</a>
+						</li>
+						<li data-pile="Ecommerce Websites">
+							<a href="http://www.desidime.com/" target="_blank" title="desidime | ecommerce">
+								<span class="tp-info"><span>DesiDime</span></span>
+								<img src="images/16/2.jpg" />
+							</a>
+						</li>
+						<li data-pile="Ecommerce Websites">
+							<a href="http://www.ebay.in/" target="_blank" title="ebay | ecommerce">
+								<span class="tp-info"><span>Ebay</span></span>
+								<img src="images/16/3.jpg" />
+							</a>
+						</li>
+						<li data-pile="Ecommerce Websites">
+							<a href="http://www.flipkart.com/" target="_blank" title="flipkart | ecommerce">
+								<span class="tp-info"><span>Flipkart</span></span>
+								<img src="images/16/4.jpg" />
+							</a>
+						</li>
+						<li data-pile="Ecommerce Websites">
+							<a href="http://www.myntra.com/" target="_blank" title="myntra | ecommerce">
+								<span class="tp-info"><span>Myntra</span></span>
+								<img src="images/16/5.jpg" />
+							</a>
+						</li>
+						<li data-pile="Ecommerce Websites">
+							<a href="https://paytm.com/" target="_blank" title="paytm | ecommerce">
+								<span class="tp-info"><span>Paytm</span></span>
+								<img src="images/16/6.jpg" />
+							</a>
+						</li>
+						<li data-pile="Ecommerce Websites">
+							<a href="https://www.payu.in/index" target="_blank" title="payu | ecommerce">
+								<span class="tp-info"><span>PayU</span></span>
+								<img src="images/16/7.jpg" />
+							</a>
+						</li>
+						<li data-pile="Ecommerce Websites">
+							<a href="http://www.shopclues.com/" target="_blank" title="shopclues | ecommerce">
+								<span class="tp-info"><span>ShopClues</span></span>
+								<img src="images/16/8.jpg" />
+							</a>
+						</li>
+						<li data-pile="Ecommerce Websites">
+							<a href="http://www.snapdeal.com/" target="_blank" title="snapdeal | ecommerce">
+								<span class="tp-info"><span>SnapDeal</span></span>
+								<img src="images/16/9.jpg" />
+							</a>
+						</li>
+						<li data-pile="Ecommerce Websites">
+							<a href="#" class="displayImage">
+								<span class="tp-info"><span>Display Image</span></span>
+								<img src="images/16/10.jpg" />
+							</a>
+						</li>
+
+					    <!-- Coupons -->
+						<li data-pile="Coupons">
+							<a href="http://www.coupondunia.in/groupon" target="_blank" title="coupon | coupons">
+								<span class="tp-info"><span>Coupons Dunia</span></span>
+								<img src="images/17/1.jpg" />
+							</a>
+						</li>
+						<li data-pile="Coupons">
+							<a href="http://www.couponzguru.com/" target="_blank" title="coupon | coupons">
+								<span class="tp-info"><span>CouponGuru</span></span>
+								<img src="images/17/2.jpg" />
+							</a>
+						</li>
+						<li data-pile="Coupons">
+							<a href="http://www.couponsindia.net/" target="_blank" title="coupon | coupons">
+								<span class="tp-info"><span>Coupons India</span></span>
+								<img src="images/17/3.jpg" />
+							</a>
+						</li>
+						<li data-pile="Coupons">
+							<a href="http://www.coupondekho.co.in/" target="_blank" title="coupon | coupons">
+								<span class="tp-info"><span>Coupon Dekho</span></span>
+								<img src="images/17/4.jpg" />
+							</a>
+						</li>
+						<li data-pile="Coupons">
+							<a href="http://www.couponland.in/dominos-coupons" target="_blank" title="coupon | coupons">
+								<span class="tp-info"><span>Dominos Coupons</span></span>
+								<img src="images/17/10.jpg" />
+							</a>
+						</li>
+						<li data-pile="Coupons">
+							<a href="http://www.flipit.com/in" target="_blank" title="coupon | coupons">
+								<span class="tp-info"><span>Flipit</span></span>
+								<img src="images/17/5.jpg" />
+							</a>
+						</li>
+						<li data-pile="Coupons">
+							<a href="http://www.groupon.co.in/coupons/" target="_blank" title="coupon | coupons">
+								<span class="tp-info"><span>Groupon</span></span>
+								<img src="images/17/6.jpg" />
+							</a>
+						</li>
+						<li data-pile="Coupons">
+							<a href="http://coupons.oneindia.com/" target="_blank" title="coupon | coupons">
+								<span class="tp-info"><span>OneIndia</span></span>
+								<img src="images/17/7.jpg" />
+							</a>
+						</li>
+						<li data-pile="Coupons">
+							<a href="http://priceraja.com/deals/" class="displayImage" title="coupon | coupons">
+								<span class="tp-info"><span>PrizeRaja</span></span>
+								<img src="images/17/8.jpg" />
+							</a>
+						</li>
+						<li data-pile="Coupons">
+							<a href="#" class="displayImage">
+								<span class="tp-info"><span>Display Image</span></span>
+								<img src="images/17/9.jpg" />
+							</a>
+						</li>
+
+						<!-- Paying Guest -->
+						<li data-pile="Paying Guest">
+							<a href="http://www.justdial.com/Mysore/Paying-Guest-Accommodation-For-Men/ct-10356497" target="_blank" title="paying guest | pg | accomodation">
+								<span class="tp-info"><span>PG for gents</span></span>
+								<img src="images/18/1.jpg" />
+							</a>
+						</li>
+						<li data-pile="Paying Guest">
+							<a href="http://www.justdial.com/Mysore/Paying-Guest-Accommodation-For-Girls?rloop=1" target="_blank" title="paying guest | pg | accomodation">
+								<span class="tp-info"><span>PG for ladies</span></span>
+								<img src="images/18/2.jpg" />
+							</a>
+						</li>
+						<li data-pile="Paying Guest">
+							<a href="#" class="displayImage">
+								<span class="tp-info"><span>Display Image</span></span>
+								<img src="images/18/3.jpg" />
+							</a>
+						</li>
+
+
+					</ul>
+				</div>
+			</section>
+			
+			<footer>
+				<p>© 2015 LocalMysore, All rights reserved</p>
+			</footer>	
+
+		</div><!-- /container -->
+
+
+<!-- Modal -->
+<div class="modal fade bs-example-modal-sm" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel" style="color: #000;">Search Result</h4>
+      </div>
+      <div class="modal-body">
+        <h3 class="text-center" style="color: #000;">No results found!</h3>
+      </div>
+    </div>
+  </div>
+</div>
+
+		
+		<script type="text/javascript" src="js/jquery.stapel.js"></script>
+		<script type="text/javascript">	
+			$(function() {
+
+				var $grid = $( '#tp-grid' ),
+					$name = $( '#name' ),
+					$close = $( '#close' ),
+					$loader = $( '<div class="loader"><i></i><i></i><i></i><i></i><i></i><i></i><span>Loading...</span></div>' ).insertBefore( $grid ),
+					stapel = $grid.stapel( {
+						onLoad : function() {
+							$loader.remove();
+						},
+						onBeforeOpen : function( pileName ) {
+							$name.html( pileName );
+						},
+						onAfterOpen : function( pileName ) {
+							$close.show();
+						}
+					} );
+
+				$close.on( 'click', function() {
+					setTimeout(function(){
+						$close.hide();
+					}, 800); 
+					$name.empty();
+					stapel.closePile();
+					$("#keyword").val("");
+				} );
+
+				
+				
+				$("#keyword").change(function(){
+					var _sflag = true;
+					var search = $(this).val();
+
+					$("#tp-grid li").find("a").each(function(_index, _ele) {
+						if ( typeof($(_ele).attr("title")) != "undefined" ){
+							if( $(_ele).attr("title").toLowerCase().trim().lastIndexOf(search.toLowerCase().trim()) != -1  ){
+								$("li[data-pile='"+ $(this).parent().attr("data-pile") +"'] a.displayImage").click();
+
+								_sflag = false;
+							}
+						}
+						
+					});
+
+					if( _sflag  ){
+						$('#myModal').modal('show');
+					}
+					
+
+				});
+
+
+
+			} );
+		</script>
+	</body>
+</html>
