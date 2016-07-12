@@ -194,12 +194,14 @@
 @media screen and (max-width: 680px){
 	.topbar h2, .topbar h3 { text-align: left; padding: 0; display: block;}
 	.back { left: auto; right: 0px; margin-left: 0px;}
+  #custom-search-input { width: 100% !important; }
+  .contact {width: 322px !important; }
 }
 
 
 #custom-search-input {
-	width: 30%;
-	float: right;
+  width: 30%;
+  float: right;
 }
 
 .team {
